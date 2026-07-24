@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - ICT Club</title>
+  <link rel="icon" type="image/png" href="favicon.png"> <!-- Add your favicon file here -->
+  <style>
+    /* General body */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #004080, #0066cc);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    /* Navigation bar */
+    nav {
+      margin-top: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    .current {
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    /* Students section */
+    .students {
+      max-width: 1000px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .students h2 {
+      font-size: 2rem;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+   .student-card p {
+  font-size: 1rem;
+  margin-bottom: 4px; /* smaller gap */
+  line-height: 1px;   /* tighter line spacing */
+}
+
+
+    .student-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .student-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 220px; /* fixed width */
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      /* Equal height and aligned content */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 340px; /* consistent height */
+    }
+
+    .student-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 4px solid #004080;
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .student-card h3 {
+      font-size: 1.3rem;
+      color: #004080;
+      margin-bottom: 5px;
+    }
+
+    .student-card p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .student-card button {
+      margin-top: auto;
+      padding: 8px 14px;
+      border: none;
+      background: #004080;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .student-card button:hover {
+      background: #0066cc;
+      transform: scale(1.05);
+    }
+
+    /* Link to Others */
+    .others-link {
+      margin-top: 40px;
+    }
+
+    .others-link a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #004080;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .others-link a:hover {
+      background: #0066cc;
+      transform: scale(1.05);
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #004080;
+      margin: 30px auto;
+      padding: 15px 20px;
+      background: #e6f0ff;
+      border-left: 6px solid #0066cc;
+      border-right: 6px solid #0066cc;
+      border-radius: 8px;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      letter-spacing: 1px;
+    }
+
+    /* Footer */
+    footer {
+      background: #004080;
+      color: white;
+      padding: 15px;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ICT CLUB</h1>
+    <p>Talented Members of the ICT Club</p>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="students">
+    <p class="intro-text">Core Members Of The ICT Club</p>
+
+    <div class="student-grid">
+      <div class="student-card">
+        <img src="Copilot_20260717_112911.png" alt="Dominion">
+        <h3>Dominion</h3>
+        <p>• Animator </p>
+        <p>• Web Developer</p>
+        <button onclick="location.href='dominion.html'">View Profile</button>
+      </div>
+
+      <div class="student-card">
+        <img src="soma.jpg" alt="Somachi">
+        <h3>Somachi</h3>
+        <p>• Web Developer</p>
+        <button onclick="location.href='somachi.html'">View Profile</button>
+      </div>
+
+      <div class="student-card">
+        <img src="Copilot_20260717_112911.png" alt="Duku">
+        <h3>Daniel</h3>
+        <p>• Data Analyst</p>
+        <button onclick="location.href='duku.html'">View Profile</button>
+      </div>
+
+      <div class="student-card">
+        <img src="KAmsi.jpg" alt="Kamsi">
+        <h3>Kamsi</h3>
+        <p>• Mobile App Developer</p>
+        <button onclick="location.href='kamsi.html'">View Profile</button>
+      </div>
+
+      <div class="student-card">
+        <img src="Chidubem.jpg" alt="Chidubem">
+        <h3>Chidubem</h3>
+        <p>• Graphic Designer</p>
+        <p>• Video Editor (CapCut)</p>
+        <button onclick="location.href='chidubem.html'">View Profile</button>
+      </div>
+
+      <div class="student-card">
+        <img src="Deborah.jpg" alt="Deborah">
+        <h3>Deborah</h3>
+        <p>• UI/UX</p>
+        <p>• Graphic Designer</p>
+        <button onclick="location.href='deborah.html'">View Profile</button>
+      </div>
+    </div>
+
+    <!-- Link to Others page -->
+    <div class="others-link">
+      <a href="others.html">See More Members</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 ICT CLUB | All Rights Reserved
+  </footer>
+</body>
+</html>
